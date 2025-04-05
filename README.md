@@ -1,5 +1,5 @@
 # OOP2Project
-**CIT OOP2 Project **
+**CIT OOP2 Project: **
 **Abyssal Rescue**
 
 Members:
