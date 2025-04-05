@@ -3,11 +3,11 @@ CIT OOP2 Project
 Abyssal Rescue
 
 Members:
-\nDela Riarte
-\nLumauag
-\nAlesna
-\nCayacap
-\nRacaza
+/nDela Riarte
+/nLumauag
+/nAlesna
+/nCayacap
+/nRacaza
 
 Update LOGS:
 
