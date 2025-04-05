@@ -1,6 +1,13 @@
 # OOP2Project
-CIT oop2 project
+CIT OOP2 Project 
 Abyssal Rescue
+
+Members:
+Dela Riarte
+Lumauag
+Alesna
+Cayacap
+Racaza
 
 Update LOGS:
 
