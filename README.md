@@ -6,3 +6,4 @@ updates:
 
 April 5, 2025:
 - Added Menu w/ Functional Buttons (Play Only) (DENN)
+- Added sound effects file
