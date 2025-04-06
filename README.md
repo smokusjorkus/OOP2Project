@@ -18,5 +18,5 @@ Members:
 - Added sound effects file
 
 **April 6, 2025:**
-- Added Background img for Menu (prototype version / subject for changes) (Not yet implemented on Repository) (12:45am)
-- Readjusted Menu buttons (Not yet implemented on Repository) (12:45am)
+- Added background img for menu (prototype version / subject for changes) (Not yet implemented on Repository) (12:45am)
+- Readjusted menu button positions (Not yet implemented on Repository) (12:45am)
