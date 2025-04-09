@@ -1,5 +1,7 @@
 package utils;
 
+import java.awt.geom.Rectangle2D;
+
 import main.Game;
 
 public class HelpMethods {
@@ -30,5 +32,9 @@ public class HelpMethods {
 		if(value >= 111 || value < 0 || value == 46 || (value > 51 && value < 54))
 			return true;
 		return false;
+	}
+	
+	public static boolean IsFloor(Rectangle2D.Float hitbox, float xSpeed, int[][] lvlData) {
+		return isSolid(hitbox.x + xSpeed, hitbox.y, lvlData);
 	}
 }

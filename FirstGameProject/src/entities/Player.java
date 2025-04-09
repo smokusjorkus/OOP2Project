@@ -11,11 +11,11 @@ import utils.LoadSave;
 public class Player extends Entity{
 
 	private BufferedImage[][] animations;
-	private int aniTick, aniIndex, aniSpeed = 15;
+	private int aniTick, aniIndex, aniSpeed = 16;
 	private int playerAction;
 	private boolean attacking = false;
 	private boolean left, up, right, down;
-	private float playerSpeed = 1.0f;
+	private float playerSpeed = 1.0f * Game.SCALE;
 	private int facingDirection = WALKING_DOWN;
 	private int[][] lvlData;
 	private float xDrawOffset = 80 * Game.SCALE;
@@ -42,6 +42,7 @@ public class Player extends Entity{
 	public void render(Graphics g, int xLvlOffset, int yLvlOffset) {
 		g.drawImage(animations[playerAction][aniIndex], (int)(hitbox.x - xDrawOffset) - xLvlOffset, 
 				(int)(hitbox.y - yDrawOffset) - yLvlOffset, width, height, null);
+//		drawHitbox(g, xLvlOffset, yLvlOffset);
 	}
 
 	private void updateAnimationTick() {

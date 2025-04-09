@@ -14,6 +14,53 @@ public class Constants {
 		}
 	}
 	
+	public static class EnemyConstants{
+		public static final int SLIME = 0;
+		
+		public static final int IDLE = 0;
+		public static final int RUNNING_DOWN = 4;
+		public static final int RUNNING_UP = 5;
+		public static final int RUNNING_LEFT = 6;
+		public static final int RUNNING_RIGHT = 7;
+		public static final int ATTACKING = 8;
+		public static final int HURT = 12;
+		public static final int DEATH = 16;
+		
+		public static final int SLIME_WIDTH_DEFAULT = 64;
+		public static final int SLIME_HEIGHT_DEFAULT = 64;
+		
+		public static final int SLIME_WIDTH = (int) (SLIME_WIDTH_DEFAULT * Game.SCALE);
+		public static final int SLIME_HEIGHT = (int) (SLIME_HEIGHT_DEFAULT * Game.SCALE);
+		
+		public static final int SLIME_DRAWOFFSET_X = (int) (20 * Game.SCALE);
+		public static final int SLIME_DRAWOFFSET_Y = (int) (20 * Game.SCALE);
+
+		public static int GetSpriteAmount(int enemy_type, int enemy_state) {
+			
+			switch(enemy_type) {
+			case SLIME:
+				switch(enemy_state) {
+				case IDLE:
+					return 6;
+				case RUNNING_DOWN:
+				case RUNNING_UP:
+				case RUNNING_LEFT:
+				case RUNNING_RIGHT:
+					return 8;
+				case ATTACKING:
+					return 10;
+				case HURT:
+					return 5;
+				case DEATH:
+					return 10;
+				}
+				
+			}
+			
+			return 0;
+		}
+	}
+	
 	public static class Directions{
 		public static final int LEFT = 0;
 		public static final int UP = 1;

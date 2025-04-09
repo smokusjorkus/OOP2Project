@@ -4,6 +4,7 @@ import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 
+import entities.EnemyManager;
 import entities.Player;
 import levels.LevelManager;
 import main.Game;
@@ -11,6 +12,7 @@ import main.Game;
 public class Playing extends State implements Statemethods {
     private Player player;
     private LevelManager levelManager;
+    private EnemyManager enemyManager;
     
     // Camera tracking (now simpler since we center on player)
     private int xLvlOffset;
@@ -31,13 +33,14 @@ public class Playing extends State implements Statemethods {
     
     private void initClasses() {
         levelManager = new LevelManager(game);
+        enemyManager = new EnemyManager(this);
         player = new Player(25*Game.TILES_SIZE, 25*Game.TILES_SIZE, (int) (192 * Game.SCALE), (int) (192 * Game.SCALE));
-        player.loadLvlData(levelManager.getCurrentLevel().getLayers().get(3).getLevelData());
+        player.loadLvlData(levelManager.getCurrentLevel().getLayers().get(0).getLevelData());
     }
     
     private void calcLevelBounds() {
         // Get dimensions from the first layer (assuming all layers have same dimensions)
-        int[][] levelData = levelManager.getCurrentLevel().getLayers().get(3).getLevelData();
+        int[][] levelData = levelManager.getCurrentLevel().getLayers().get(0).getLevelData();
         lvlTilesWide = levelData[0].length;
         lvlTilesTall = levelData.length;
         
@@ -49,6 +52,7 @@ public class Playing extends State implements Statemethods {
     public void update() {
         levelManager.update();
         player.update();
+        enemyManager.update(levelManager.getCurrentLevel().getLayers().get(0).getLevelData());
         centerCameraOnPlayer();
     }
 
@@ -66,6 +70,7 @@ public class Playing extends State implements Statemethods {
     public void draw(Graphics g) {
         levelManager.draw(g, xLvlOffset, yLvlOffset);
         player.render(g, xLvlOffset, yLvlOffset);
+        enemyManager.draw(g, xLvlOffset, yLvlOffset);
     }
 
 	@Override

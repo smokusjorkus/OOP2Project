@@ -23,11 +23,9 @@ public class LevelManager {
     private void createLayeredLevel() {
         List<Level> layers = new ArrayList<>();
         // Load each layer in order (bottom to top)
-        layers.add(new Level(LoadSave.GetLevelData("sea.png")));      // Background layer
-        layers.add(new Level(LoadSave.GetLevelData("land.png")));     // Terrain layer
-        layers.add(new Level(LoadSave.GetLevelData("edges.png")));    // Details layer
-        layers.add(new Level(LoadSave.GetLevelData("grass.png")));    // Top layer
-        
+        layers.add(new Level(LoadSave.GetLevelData("levelOne_layer1.png")));
+        layers.add(new Level(LoadSave.GetLevelData("levelOne_layer2.png")));
+    
         // Create a composite level with all layers
         levelOne = new Level(layers);
     }
