@@ -12,6 +12,10 @@ Members:
 
 
 **Update LOGS:**
+**April 9, 2025:**
+- Added Enemies (Slime)
+- Enemies can patrol
+
 
 **April 5, 2025:**
 - Added Menu w/ Functional Buttons (Play & Quit Only) (no background yet) (11:25 pm)
