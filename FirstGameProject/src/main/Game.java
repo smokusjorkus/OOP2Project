@@ -58,7 +58,6 @@ public class Game implements Runnable{
     	case PLAYING:
     		playing.update();
         	break;
-    	case OPTIONS:
     	case QUIT:
     	default:	
     		System.exit(0);
@@ -74,7 +73,7 @@ public class Game implements Runnable{
     	case PLAYING:
     		playing.draw(g);
         	break;
-        default:
+    	default:	
         	break;
     	}
 	}
