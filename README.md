@@ -13,11 +13,6 @@ Members:
 
 **Update LOGS:**
 
-**April 9, 2025:**
-- Added Enemies (Slime)
-- Enemies can patrol
-
-
 **April 5, 2025:**
 - Added Menu w/ Functional Buttons (Play & Quit Only) (no background yet) (11:25 pm)
 - Added sound effects file
@@ -32,6 +27,8 @@ Members:
 - Menu Progress: 98% (polishing nalang)
 - Starting implementation of bg music
 - BG Music Implementation Progress: 0%
+- Added Enemies (Slime)
+- Enemies can patrol
 
 **Menu things to do:**
 - Redesign buttons (90%)
