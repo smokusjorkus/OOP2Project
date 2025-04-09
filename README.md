@@ -32,3 +32,7 @@ Members:
 - Redesign buttons (90%)
 - Redesign background menu (DONE)
 
+**BG Music things to do:**
+- Implement music on menu (0%)
+- Implement music on game (0%)
+
