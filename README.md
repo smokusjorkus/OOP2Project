@@ -27,6 +27,6 @@ Members:
 - Menu Progress: 95% (polishing nalang)
 
 **Menu things to do:**
-- Redesign buttons
-- Redesign background menu
+- Redesign buttons (90%)
+- Redesign background menu (DONE)
 
