@@ -11,6 +11,8 @@ import ui.MenuButton;
 public class Menu extends State implements Statemethods{
 
 	private MenuButton[] buttons = new MenuButton[2];
+	private BufferedImage backgroundImg;
+	private int menuX, menuY, menuWidth, menuHeight;
 	
 	public Menu(Game game) {
 		
