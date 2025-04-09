@@ -12,6 +12,7 @@ Members:
 
 
 **Update LOGS:**
+
 **April 9, 2025:**
 - Added Enemies (Slime)
 - Enemies can patrol
