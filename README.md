@@ -24,7 +24,7 @@ Members:
 **April 9, 2025:**
 - Readjusted background img positions (implemented on Repository) (11:45am)
 - Reimplemented menu with 2 buttons on Repository
-- Menu Progress: 95% (polishing nalang)
+- Menu Progress: 98% (polishing nalang)
 - Starting implementation of bg music
 - BG Music Implementation Progress: 0%
 
