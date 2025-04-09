@@ -29,4 +29,4 @@ Members:
 **Menu things to do:**
 - Redesign buttons
 - Redesign background menu
-- Readjust button sizes
+
