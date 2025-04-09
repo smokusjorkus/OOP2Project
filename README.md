@@ -25,6 +25,8 @@ Members:
 - Readjusted background img positions (implemented on Repository) (11:45am)
 - Reimplemented menu with 2 buttons on Repository
 - Menu Progress: 95% (polishing nalang)
+- Starting implementation of bg music
+- BG Music Implementation Progress: 0%
 
 **Menu things to do:**
 - Redesign buttons (90%)
