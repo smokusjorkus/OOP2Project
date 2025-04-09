@@ -24,7 +24,7 @@ Members:
 **April 9, 2025:**
 - Readjusted background img positions (implemented on Repository) (11:45am)
 - Menu Progress: 80%
-Menu things to do:
+**Menu things to do:**
 - Redesign buttons
 - Redesign background menu
 - Readjust button sizes
