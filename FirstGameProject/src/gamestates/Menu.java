@@ -10,12 +10,21 @@ import ui.MenuButton;
 
 public class Menu extends State implements Statemethods{
 
-	private MenuButton[] buttons = new MenuButton[3];
+	private MenuButton[] buttons = new MenuButton[2];
 	
 	public Menu(Game game) {
 		
 		super(game);
 		loadButtons();
+		loadBackground();
+		
+	}
+
+	private void loadBackground() {
+		
+		backgroundImg = LoadSave.GetSpriteAtlas(LoadSave.MENU_BACKGROUND);
+		menuWidth = (int)(backgroundImg.getWidth() * Game.SCALE);
+		menuHeight = (int)(backgroundImg.getHeight() * Game.SCALE);
 		
 	}
 
@@ -39,6 +48,8 @@ public class Menu extends State implements Statemethods{
 
 	@Override
 	public void draw(Graphics g) {
+
+		g.drawImage(backgroundImg, menuX, menuY, menuWidth, menuHeight, null);
 	
 		for(MenuButton mb : buttons) {
 			
